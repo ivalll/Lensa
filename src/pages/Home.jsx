@@ -7,6 +7,9 @@ import Camera from "../assets/images/kamera.png";
 import Tripod from "../assets/images/tripod.png";
 import Photographer from "../assets/images/photographer.png";
 import Meetup from "../assets/images/meetup.jpg";
+import "../index.css";
+import Jamalumek from "../assets/images/jamalumek.jpg";
+import Jamaludin from "../assets/images/jamaludin.jpg";
 
 export default function Home() {
   useEffect(() => {
@@ -23,7 +26,7 @@ export default function Home() {
           className="rounded-circle mb-3"
           style={{ height: "128px", width: "128px" }}
         />
-        <h2 className="display-4 fw-bold mb-2">UKM LENSA</h2>
+        <h2 className="display-4 fw-bold mb-2 text-orange">UKM LENSA</h2>
         <p className="lead mb-4">
           Unit Kegiatan Mahasiswa | Universitas Ahmad Dahlan
         </p>
@@ -60,7 +63,7 @@ export default function Home() {
           className="rounded mb-4"
           style={{ height: "200px", width: "200px" }}
         />
-        <h3 className="h2 fw-bold mb-3">Kami adalah UKM LENSA</h3>
+        <h3 className="h2 fw-bold mb-3 text-orange">Kami adalah UKM LENSA</h3>
         <p className="text-white mb-4">
           Tempat mahasiswa berbakat mengasah kreativitas dalam bidang fotografi,
           videografi, desain grafis, dan dunia multimedia. Kami percaya bahwa
@@ -72,7 +75,7 @@ export default function Home() {
       <section className="bg-light text-dark py-5">
         <div className="container">
           <h3
-            className="text-center display-6 fw-bold mb-5"
+            className="text-center display-6 fw-bold mb-5 text-orange"
             data-aos="zoom-in"
             data-aos-duration="1500"
           >
@@ -93,8 +96,10 @@ export default function Home() {
                     className="mb-3"
                     style={{ height: "96px", width: "96px" }}
                   />
-                  <h5 className="card-title">Penyewaan Kamera Profesional</h5>
-                  <p className="card-text text-muted">
+                  <h5 className="card-title text-orange">
+                    Penyewaan Kamera Profesional
+                  </h5>
+                  <p className="card-text text-secondary">
                     Sediakan berbagai jenis kamera DSLR & mirrorless untuk
                     menunjang karya visual.
                   </p>
@@ -119,10 +124,10 @@ export default function Home() {
                     className="mb-3"
                     style={{ height: "96px", width: "96px" }}
                   />
-                  <h5 className="card-title">
+                  <h5 className="card-title text-orange">
                     Penyewaan Perlengkapan Multimedia
                   </h5>
-                  <p className="card-text text-muted">
+                  <p className="card-text text-secondary">
                     Tripod, lighting, dan perlengkapan lain untuk mendukung
                     produksi kontenmu.
                   </p>
@@ -150,8 +155,10 @@ export default function Home() {
                     className="mb-3"
                     style={{ height: "96px", width: "96px" }}
                   />
-                  <h5 className="card-title">Jasa Fotografi & Videografi</h5>
-                  <p className="card-text text-muted">
+                  <h5 className="card-title text-orange">
+                    Jasa Fotografi & Videografi
+                  </h5>
+                  <p className="card-text text-secondary">
                     Abadikan momen spesial dengan tim dokumentasi profesional
                     kami.
                   </p>
@@ -171,25 +178,25 @@ export default function Home() {
         data-aos="zoom-in"
         data-aos-duration="1500"
       >
-        <h3 className="h3 fw-bold mb-4">Pengurus Inti</h3>
+        <h3 className="h3 fw-bold mb-4 text-orange">Pengurus Inti</h3>
         <div className="row justify-content-center">
           <div className="col-6 col-md-3 mb-4">
             <img
-              src="/images/jamaludin.jpg"
+              src={Jamaludin}
               className="rounded-circle mb-2"
               style={{ width: "128px", height: "128px", objectFit: "cover" }}
             />
             <p className="fw-semibold mb-0">Ketua</p>
-            <p className="text-muted small">Raniyah Putri</p>
+            <p className="text-secondary small">Jamaludin</p>
           </div>
           <div className="col-6 col-md-3 mb-4">
             <img
-              src="/images/jamaludin.jpg"
+              src={Jamalumek}
               className="rounded-circle mb-2"
               style={{ width: "128px", height: "128px", objectFit: "cover" }}
             />
             <p className="fw-semibold mb-0">Wakil</p>
-            <p className="text-muted small">Dani Pratama</p>
+            <p className="text-secondary small">Jamalumek</p>
           </div>
         </div>
       </section>
@@ -201,7 +208,9 @@ export default function Home() {
         data-aos-duration="1500"
       >
         <h3 className="h4 fw-bold mb-3">Anda Penasaran?</h3>
-        <p className="text-muted mb-4">Cari tahu yuk, mengenai UKM LENSA.</p>
+        <p className="text-secondary mb-4">
+          Cari tahu yuk, mengenai UKM LENSA.
+        </p>
         <a href="/about" className="btn btn-light fw-semibold">
           Tentang Kami{" "}
           <i className="fas fa-arrow-up-right-from-square ms-2"></i>
@@ -209,7 +218,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="text-center text-muted small py-3 border-top">
+      <footer className="text-center text-secondary small py-3 border-top">
         © {new Date().getFullYear()} UKM LENSA - Universitas Ahmad Dahlan
       </footer>
     </div>
